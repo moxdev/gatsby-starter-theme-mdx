@@ -1,6 +1,7 @@
-# Gatsby Starter Theme with Prettier and Eslint Configurations
+# Gatsby Starter Theme with MDX
 - uses the default Gatsby Starter Theme (version 2.1.20)
 - includes:
+  - built in MDX options
   - built in Prettier and ESLint configurations (ESLint uses airbnb)
   - Gatsby Image configurations (images go in the "/images" directory)
   - styled components configurations (includes ThemeProvider in "layouts/theme.js" file)
