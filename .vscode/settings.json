@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#000",
+    "titleBar.inactiveForeground": "#000",
+    "titleBar.activeBackground": "#60d5facc",
+    "titleBar.inactiveBackground": "#60d5facc"
+  },
+  "files.associations": {
+    "*.md": "mdx"
+  },
+}
