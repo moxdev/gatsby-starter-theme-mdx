@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { ThemeProvider } from 'styled-components'
-import theme from './theme'
+import theme from '../utils/theme'
 
-import '../styles/styles.scss'
+// Replace with Typography
+// import '../styles/styles.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -21,7 +22,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <ThemeProvider theme={theme}>
-        <div>
+        <>
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
@@ -35,7 +36,7 @@ const Layout = ({ children }) => (
           </Helmet>
 
           {children}
-        </div>
+        </>
       </ThemeProvider>
     )}
   />

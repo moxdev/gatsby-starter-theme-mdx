@@ -5,7 +5,8 @@ const theme = {
   font_bold: '"HelveticaNeueBold", sans-serif',
   font_regular: '"HelveticaNeueBold", sans-serif',
   font_light: '"HelveticaNeueBold", sans-serif',
-  font_smooth: '-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;',
+  font_smooth:
+    '-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;',
 }
 
 export default theme

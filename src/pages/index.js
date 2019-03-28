@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Layout from '../layouts/index'
-import Image from '../components/Image'
-import SEO from '../components/Seo'
+import Image from '../components/Image/Image'
+import SEO from '../components/Seo/Seo'
 
 const IndexPage = () => (
   <Layout>
