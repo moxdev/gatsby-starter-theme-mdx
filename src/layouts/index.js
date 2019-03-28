@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { ThemeProvider } from 'styled-components'
-import theme from '../utils/theme'
+import theme from '../theme/theme'
 
 // Replace with Typography
 // import '../styles/styles.scss'
