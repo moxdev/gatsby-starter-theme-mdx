@@ -8,7 +8,7 @@ import kebabCase from 'lodash/kebabCase'
 import Layout from '../layouts/index'
 import SEO from '../components/Seo/Seo'
 
-const TagsPage = ({
+const CategoriesPage = ({
   data: {
     allMdx: { group },
     site: {
@@ -19,12 +19,12 @@ const TagsPage = ({
   <Layout>
     <SEO title={title} />
     <div>
-      <h1>Tags</h1>
+      <h1>Categories</h1>
       <ul>
-        {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
+        {group.map(cat => (
+          <li key={cat.fieldValue}>
+            <Link to={`/categories/${kebabCase(cat.fieldValue)}/`}>
+              {cat.fieldValue} ({cat.totalCount})
             </Link>
           </li>
         ))}
@@ -33,7 +33,7 @@ const TagsPage = ({
   </Layout>
 )
 
-TagsPage.propTypes = {
+CategoriesPage.propTypes = {
   data: PropTypes.shape({
     allMdx: PropTypes.shape({
       group: PropTypes.arrayOf(
@@ -51,7 +51,7 @@ TagsPage.propTypes = {
   }),
 }
 
-export default TagsPage
+export default CategoriesPage
 
 export const pageQuery = graphql`
   query {
@@ -61,7 +61,7 @@ export const pageQuery = graphql`
       }
     }
     allMdx(limit: 2000) {
-      group(field: fields___tags) {
+      group(field: fields___categories) {
         fieldValue
         totalCount
       }

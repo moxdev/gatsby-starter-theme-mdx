@@ -33,6 +33,8 @@ const BlogPage = ({ data }) => {
           </div>
         )
       })}
+      <Link to="/tags">Tags</Link>
+      <Link to="/categories">Categories</Link>
     </Layout>
   )
 }
